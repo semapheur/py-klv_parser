@@ -4,11 +4,11 @@ from io import BytesIO, IOBase
 
 from typing import BinaryIO, ClassVar, Iterator, Type, TYPE_CHECKING, Union
 
-from klv_item import UnknownKLVItem
-from utils import bytes_to_int
+from .klv_item import UnknownKLVItem
+from .utils import bytes_to_int
 
 if TYPE_CHECKING:
-  from klv_set_parser import KLVSetParser
+  from .klv_set_parser import KLVSetParser
 
 
 class KLVParser(Iterator[tuple[bytes, bytes]]):

@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 from datetime import datetime
 from typing import ClassVar, Optional, TypeAlias, Union
 
-from klv_item import KLVItem
-from utils import (
+from .klv_item import KLVItem
+from .utils import (
   bytes_to_datetime,
   bytes_to_float,
   bytes_to_hexstr,

@@ -2,11 +2,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar
 
-from utils import ber_encode
-
-# if TYPE_CHECKING:
-#  from klv_set_parser import KLVSetParser
-#  from klv_tag_parser import KLVTagParser
+from .utils import ber_encode
 
 ValueT = TypeVar("ValueT")
 

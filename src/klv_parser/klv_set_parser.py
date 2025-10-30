@@ -5,9 +5,9 @@ from datetime import datetime
 from pprint import pformat
 from typing import Any, Callable, ClassVar, Optional, Type, Union
 
-from klv_item import KLVItem, UnknownKLVItem
-from klv_stream_parser import KLVParser
-from klv_tag_parser import DecodedValue, KLVTagParser
+from .klv_item import KLVItem, UnknownKLVItem
+from .klv_stream_parser import KLVParser
+from .klv_tag_parser import DecodedValue, KLVTagParser
 
 
 class KLVSetParser(KLVItem[OrderedDict[bytes, KLVItem[Any]]], ABC):
